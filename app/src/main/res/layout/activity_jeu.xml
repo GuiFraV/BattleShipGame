@@ -8,7 +8,7 @@
     tools:context=".Jeu">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/linearLayout1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center_horizontal"
@@ -19,14 +19,14 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/titreJeu"
+            android:id="@+id/titreJeu1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Battleship Game" />
     </LinearLayout>
 
     <TableLayout
-        android:id="@+id/Tableau"
+        android:id="@+id/Tableau1"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:orientation="horizontal"
@@ -42,32 +42,31 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuA1"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="A1" />
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuA2"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="A2" />
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuA3"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:text="A3"
-                tools:ignore="DuplicateIds" />
+                android:text="A3" />
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuA4"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="A4" />
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuA5"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="A5" />
@@ -78,35 +77,34 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuB1"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="B1" />
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuB2"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="B2" />
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuB3"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="B3" />
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuB4"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="B4" />
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuB5"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="B5" />
-
         </TableRow>
 
         <TableRow
@@ -114,35 +112,34 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuC1"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="C1" />
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuC2"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="C2" />
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuC3"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="C3" />
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuC4"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="C4" />
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuC5"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="C5" />
-
         </TableRow>
 
         <TableRow
@@ -150,31 +147,31 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuD1"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="D1" />
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuD2"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="D2" />
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuD3"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="D3" />
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuD4"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="D4" />
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuD5"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="D5" />
@@ -185,31 +182,31 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuE1"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="E1" />
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuE2"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="E2" />
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuE3"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="E3" />
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuE4"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="E4" />
 
             <Button
-                android:id="@+id/boutonJeu"
+                android:id="@+id/boutonJeuE5"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="E5" />

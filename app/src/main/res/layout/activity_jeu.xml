@@ -7,4 +7,214 @@
     android:layout_height="match_parent"
     tools:context=".Jeu">
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/titreJeu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Battleship Game" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/Tableau"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="A1" />
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="A2" />
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="A3"
+                tools:ignore="DuplicateIds" />
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="A4" />
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="A5" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="B1" />
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="B2" />
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="B3" />
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="B4" />
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="B5" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="C1" />
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="C2" />
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="C3" />
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="C4" />
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="C5" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="D1" />
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="D2" />
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="D3" />
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="D4" />
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="D5" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="E1" />
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="E2" />
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="E3" />
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="E4" />
+
+            <Button
+                android:id="@+id/boutonJeu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="E5" />
+        </TableRow>
+
+    </TableLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

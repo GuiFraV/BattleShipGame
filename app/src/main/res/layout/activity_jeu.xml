@@ -7,10 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".Jeu">
 
+    <!--C'est la partie qui contient le titre du jeu-->
+
     <LinearLayout
-        android:id="@+id/linearLayout1"
+        android:id="@+id/titreLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="70dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,11 +25,37 @@
             android:id="@+id/titreJeu1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Battleship Game" />
+            android:text="Battleship Game"
+            android:textSize="50dp" />
     </LinearLayout>
 
+    <!--C'est la partie qui contient les feedbacks c'est à dire les messages qui vont nous
+    dire si on est proche ou pas de toucher-->
+
+    <LinearLayout
+        android:id="@+id/feedbackLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="250dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <!--C'est le tableau qui va contenir toutes les cases dans notre jeu-->
+
     <TableLayout
-        android:id="@+id/Tableau1"
+        android:id="@+id/tableauJeu"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:orientation="horizontal"
@@ -213,5 +242,26 @@
         </TableRow>
 
     </TableLayout>
+
+    <!--C'est la partie qui contient le bouton pour vérifier si les cases qu'on a indiqué sont corrects ou non-->
+
+    <LinearLayout
+        android:id="@+id/checkLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="650dp">
+
+        <Button
+            android:id="@+id/button_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

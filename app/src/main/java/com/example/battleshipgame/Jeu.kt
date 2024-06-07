@@ -91,7 +91,8 @@ class Jeu : AppCompatActivity() {
 
         val buttonCheck = findViewById<Button>(R.id.button_check)
         buttonCheck.setOnClickListener {
-            val message: String
+            var message = "froid" // Default message
+
             if (playerChoices.containsAll(selectedCombination)) {
                 message = "gagné"
                 val intent = Intent(this, ResultActivity::class.java)

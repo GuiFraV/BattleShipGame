@@ -37,181 +37,61 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/boutonJeuA1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="A1" />
-
-            <Button
-                android:id="@+id/boutonJeuA2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="A2" />
-
-            <Button
-                android:id="@+id/boutonJeuA3"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="A3" />
-
-            <Button
-                android:id="@+id/boutonJeuA4"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="A4" />
-
-            <Button
-                android:id="@+id/boutonJeuA5"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="A5" />
+        <!-- Ajoutez les boutons pour chaque case de la grille -->
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/boutonJeuA1" android:layout_width="50dp" android:layout_height="50dp" android:text="A1" />
+            <Button android:id="@+id/boutonJeuA2" android:layout_width="50dp" android:layout_height="50dp" android:text="A2" />
+            <Button android:id="@+id/boutonJeuA3" android:layout_width="50dp" android:layout_height="50dp" android:text="A3" />
+            <Button android:id="@+id/boutonJeuA4" android:layout_width="50dp" android:layout_height="50dp" android:text="A4" />
+            <Button android:id="@+id/boutonJeuA5" android:layout_width="50dp" android:layout_height="50dp" android:text="A5" />
         </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/boutonJeuB1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="B1" />
-
-            <Button
-                android:id="@+id/boutonJeuB2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="B2" />
-
-            <Button
-                android:id="@+id/boutonJeuB3"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="B3" />
-
-            <Button
-                android:id="@+id/boutonJeuB4"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="B4" />
-
-            <Button
-                android:id="@+id/boutonJeuB5"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="B5" />
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/boutonJeuB1" android:layout_width="50dp" android:layout_height="50dp" android:text="B1" />
+            <Button android:id="@+id/boutonJeuB2" android:layout_width="50dp" android:layout_height="50dp" android:text="B2" />
+            <Button android:id="@+id/boutonJeuB3" android:layout_width="50dp" android:layout_height="50dp" android:text="B3" />
+            <Button android:id="@+id/boutonJeuB4" android:layout_width="50dp" android:layout_height="50dp" android:text="B4" />
+            <Button android:id="@+id/boutonJeuB5" android:layout_width="50dp" android:layout_height="50dp" android:text="B5" />
         </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/boutonJeuC1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="C1" />
-
-            <Button
-                android:id="@+id/boutonJeuC2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="C2" />
-
-            <Button
-                android:id="@+id/boutonJeuC3"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="C3" />
-
-            <Button
-                android:id="@+id/boutonJeuC4"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="C4" />
-
-            <Button
-                android:id="@+id/boutonJeuC5"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="C5" />
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/boutonJeuC1" android:layout_width="50dp" android:layout_height="50dp" android:text="C1" />
+            <Button android:id="@+id/boutonJeuC2" android:layout_width="50dp" android:layout_height="50dp" android:text="C2" />
+            <Button android:id="@+id/boutonJeuC3" android:layout_width="50dp" android:layout_height="50dp" android:text="C3" />
+            <Button android:id="@+id/boutonJeuC4" android:layout_width="50dp" android:layout_height="50dp" android:text="C4" />
+            <Button android:id="@+id/boutonJeuC5" android:layout_width="50dp" android:layout_height="50dp" android:text="C5" />
         </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/boutonJeuD1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="D1" />
-
-            <Button
-                android:id="@+id/boutonJeuD2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="D2" />
-
-            <Button
-                android:id="@+id/boutonJeuD3"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="D3" />
-
-            <Button
-                android:id="@+id/boutonJeuD4"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="D4" />
-
-            <Button
-                android:id="@+id/boutonJeuD5"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="D5" />
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/boutonJeuD1" android:layout_width="50dp" android:layout_height="50dp" android:text="D1" />
+            <Button android:id="@+id/boutonJeuD2" android:layout_width="50dp" android:layout_height="50dp" android:text="D2" />
+            <Button android:id="@+id/boutonJeuD3" android:layout_width="50dp" android:layout_height="50dp" android:text="D3" />
+            <Button android:id="@+id/boutonJeuD4" android:layout_width="50dp" android:layout_height="50dp" android:text="D4" />
+            <Button android:id="@+id/boutonJeuD5" android:layout_width="50dp" android:layout_height="50dp" android:text="D5" />
         </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/boutonJeuE1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="E1" />
-
-            <Button
-                android:id="@+id/boutonJeuE2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="E2" />
-
-            <Button
-                android:id="@+id/boutonJeuE3"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="E3" />
-
-            <Button
-                android:id="@+id/boutonJeuE4"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="E4" />
-
-            <Button
-                android:id="@+id/boutonJeuE5"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="E5" />
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/boutonJeuE1" android:layout_width="50dp" android:layout_height="50dp" android:text="E1" />
+            <Button android:id="@+id/boutonJeuE2" android:layout_width="50dp" android:layout_height="50dp" android:text="E2" />
+            <Button android:id="@+id/boutonJeuE3" android:layout_width="50dp" android:layout_height="50dp" android:text="E3" />
+            <Button android:id="@+id/boutonJeuE4" android:layout_width="50dp" android:layout_height="50dp" android:text="E4" />
+            <Button android:id="@+id/boutonJeuE5" android:layout_width="50dp" android:layout_height="50dp" android:text="E5" />
         </TableRow>
-
     </TableLayout>
 
+    <Button
+        android:id="@+id/button_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check"
+        app:layout_constraintTop_toBottomOf="@id/Tableau1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textView_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/button_check"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

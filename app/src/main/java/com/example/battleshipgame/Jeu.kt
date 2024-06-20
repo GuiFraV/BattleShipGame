@@ -1,8 +1,8 @@
 package com.example.battleshipgame
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import android.content.Intent
 import android.widget.Button
 import android.widget.TextView
 import kotlin.random.Random
@@ -11,6 +11,7 @@ class Jeu : AppCompatActivity() {
 
     private lateinit var selectedCombination: List<String>
     private val playerChoices = mutableListOf<String>()
+    private var clickCount = 0
     private val winningPossibilities: List<List<String>> = listOf(
         listOf("A1", "A2", "A3"),
         listOf("A2", "A3", "A4"),
@@ -79,46 +80,40 @@ class Jeu : AppCompatActivity() {
             findViewById<Button>(R.id.boutonJeuE5)
         )
 
+        val feedbackTextView = findViewById<TextView>(R.id.textView_feedback)
+
         for (button in buttons) {
             button.setOnClickListener {
                 val choice = button.text.toString()
                 if (!playerChoices.contains(choice)) {
                     playerChoices.add(choice)
                     button.setBackgroundColor(resources.getColor(android.R.color.holo_blue_light))
+                    clickCount++
                 }
-            }
-        }
 
-        val buttonCheck = findViewById<Button>(R.id.button_check)
-        buttonCheck.setOnClickListener {
-            var message = "froid" // Default message
+                var message = "froid" // Default message
 
-            if (playerChoices.containsAll(selectedCombination)) {
-                message = "gagné"
-                val intent = Intent(this, ResultActivity::class.java)
-                intent.putExtra("resultat", message)
-                startActivity(intent)
-            } else if (playerChoices.any { it in selectedCombination }) {
-                // Change the color of the touched buttons to red
-                for (choice in playerChoices) {
-                    if (selectedCombination.contains(choice)) {
-                        val buttonId = resources.getIdentifier("boutonJeu$choice", "id", packageName)
-                        findViewById<Button>(buttonId).setBackgroundColor(resources.getColor(android.R.color.holo_red_light))
+                if (selectedCombination.contains(choice)) {
+                    button.setBackgroundColor(resources.getColor(android.R.color.holo_red_light))
+                    message = "Touché"
+                } else {
+                    message = checkProximity(listOf(choice))
+                    if (message == "tiède") {
+                        button.setBackgroundColor(resources.getColor(android.R.color.holo_orange_light))
                     }
                 }
-                message = "Touché"
-            } else {
-                message = checkProximity(playerChoices)
-                // Change the color of the buttons to orange if "tiède"
-                if (message == "tiède") {
-                    for (choice in playerChoices) {
-                        val buttonId = resources.getIdentifier("boutonJeu$choice", "id", packageName)
-                        findViewById<Button>(buttonId).setBackgroundColor(resources.getColor(android.R.color.holo_orange_light))
-                    }
+
+                // Mettre à jour le TextView avec le message approprié
+                feedbackTextView.text = message
+
+                // Vérifier si toutes les cases de la combinaison gagnante ont été trouvées
+                if (playerChoices.count { it in selectedCombination } == selectedCombination.size) {
+                    val intent = Intent(this, ResultActivity::class.java)
+                    intent.putExtra("resultat", "gagné")
+                    intent.putExtra("clickCount", clickCount)
+                    startActivity(intent)
                 }
             }
-
-            findViewById<TextView>(R.id.textView_feedback).text = message
         }
     }
 

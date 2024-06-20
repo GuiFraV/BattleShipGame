@@ -9,9 +9,13 @@ import kotlin.random.Random
 
 class Jeu : AppCompatActivity() {
 
+    // Variable stockant la combinaison gagnante
     private lateinit var selectedCombination: List<String>
+
     private val playerChoices = mutableListOf<String>()
     private var clickCount = 0
+
+    // Liste de toutes les combinaisons gagnantes possibles
     private val winningPossibilities: List<List<String>> = listOf(
         listOf("A1", "A2", "A3"),
         listOf("A2", "A3", "A4"),
@@ -49,6 +53,7 @@ class Jeu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_jeu)
 
+        // Sélectionne aléatoirement une combinaison gagnante qui sera celle à trouver
         selectedCombination = winningPossibilities.random()
 
         // Ajouter des écouteurs de clic pour chaque bouton de la grille
@@ -85,6 +90,8 @@ class Jeu : AppCompatActivity() {
         for (button in buttons) {
             button.setOnClickListener {
                 val choice = button.text.toString()
+
+                // Vérifie si le choix n'a pas déjà été sélectionné
                 if (!playerChoices.contains(choice)) {
                     playerChoices.add(choice)
                     button.setBackgroundColor(resources.getColor(android.R.color.holo_blue_light))
@@ -93,6 +100,7 @@ class Jeu : AppCompatActivity() {
 
                 var message = "froid" // Default message
 
+                // Vérifie si le choix fait partie de la combinaison gagnante ou pas
                 if (selectedCombination.contains(choice)) {
                     button.setBackgroundColor(resources.getColor(android.R.color.holo_red_light))
                     message = "Touché"
@@ -117,6 +125,7 @@ class Jeu : AppCompatActivity() {
         }
     }
 
+    // Vérifie la proximité du choix du joueur par rapport à la combinaison gagnante et retourne un message en fonction de cette proximité
     private fun checkProximity(playerChoices: List<String>): String {
         var proximityCount = 0
 

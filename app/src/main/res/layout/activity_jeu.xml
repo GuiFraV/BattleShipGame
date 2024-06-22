@@ -37,7 +37,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5">
 
-        <!-- Ajoutez les boutons pour chaque case de la grille -->
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
             <Button android:id="@+id/boutonJeuA1" android:layout_width="50dp" android:layout_height="50dp" android:text="A1" />
             <Button android:id="@+id/boutonJeuA2" android:layout_width="50dp" android:layout_height="50dp" android:text="A2" />

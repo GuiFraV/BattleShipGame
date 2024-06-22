@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Jeu">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/titreJeu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Battleship Game" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/Tableau2"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/boutonJeu2A1" android:layout_width="50dp" android:layout_height="50dp" android:text="A1" />
+            <Button android:id="@+id/boutonJeu2A2" android:layout_width="50dp" android:layout_height="50dp" android:text="A2" />
+            <Button android:id="@+id/boutonJeu2A3" android:layout_width="50dp" android:layout_height="50dp" android:text="A3" />
+            <Button android:id="@+id/boutonJeu2A4" android:layout_width="50dp" android:layout_height="50dp" android:text="A4" />
+            <Button android:id="@+id/boutonJeu2A5" android:layout_width="50dp" android:layout_height="50dp" android:text="A5" />
+            <Button android:id="@+id/boutonJeu2A6" android:layout_width="50dp" android:layout_height="50dp" android:text="A6" />
+            <Button android:id="@+id/boutonJeu2A7" android:layout_width="50dp" android:layout_height="50dp" android:text="A7" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/boutonJeu2B1" android:layout_width="50dp" android:layout_height="50dp" android:text="B1" />
+            <Button android:id="@+id/boutonJeu2B2" android:layout_width="50dp" android:layout_height="50dp" android:text="B2" />
+            <Button android:id="@+id/boutonJeu2B3" android:layout_width="50dp" android:layout_height="50dp" android:text="B3" />
+            <Button android:id="@+id/boutonJeu2B4" android:layout_width="50dp" android:layout_height="50dp" android:text="B4" />
+            <Button android:id="@+id/boutonJeu2B5" android:layout_width="50dp" android:layout_height="50dp" android:text="B5" />
+            <Button android:id="@+id/boutonJeu2B6" android:layout_width="50dp" android:layout_height="50dp" android:text="B6" />
+            <Button android:id="@+id/boutonJeu2B7" android:layout_width="50dp" android:layout_height="50dp" android:text="B7" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/boutonJeu2C1" android:layout_width="50dp" android:layout_height="50dp" android:text="C1" />
+            <Button android:id="@+id/boutonJeu2C2" android:layout_width="50dp" android:layout_height="50dp" android:text="C2" />
+            <Button android:id="@+id/boutonJeu2C3" android:layout_width="50dp" android:layout_height="50dp" android:text="C3" />
+            <Button android:id="@+id/boutonJeu2C4" android:layout_width="50dp" android:layout_height="50dp" android:text="C4" />
+            <Button android:id="@+id/boutonJeu2C5" android:layout_width="50dp" android:layout_height="50dp" android:text="C5" />
+            <Button android:id="@+id/boutonJeu2C6" android:layout_width="50dp" android:layout_height="50dp" android:text="C6" />
+            <Button android:id="@+id/boutonJeu2C7" android:layout_width="50dp" android:layout_height="50dp" android:text="C7" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/boutonJeu2D1" android:layout_width="50dp" android:layout_height="50dp" android:text="D1" />
+            <Button android:id="@+id/boutonJeu2D2" android:layout_width="50dp" android:layout_height="50dp" android:text="D2" />
+            <Button android:id="@+id/boutonJeu2D3" android:layout_width="50dp" android:layout_height="50dp" android:text="D3" />
+            <Button android:id="@+id/boutonJeu2D4" android:layout_width="50dp" android:layout_height="50dp" android:text="D4" />
+            <Button android:id="@+id/boutonJeu2D5" android:layout_width="50dp" android:layout_height="50dp" android:text="D5" />
+            <Button android:id="@+id/boutonJeu2D6" android:layout_width="50dp" android:layout_height="50dp" android:text="D6" />
+            <Button android:id="@+id/boutonJeu2D7" android:layout_width="50dp" android:layout_height="50dp" android:text="D7" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/boutonJeu2E1" android:layout_width="50dp" android:layout_height="50dp" android:text="E1" />
+            <Button android:id="@+id/boutonJeu2E2" android:layout_width="50dp" android:layout_height="50dp" android:text="E2" />
+            <Button android:id="@+id/boutonJeu2E3" android:layout_width="50dp" android:layout_height="50dp" android:text="E3" />
+            <Button android:id="@+id/boutonJeu2E4" android:layout_width="50dp" android:layout_height="50dp" android:text="E4" />
+            <Button android:id="@+id/boutonJeu2E5" android:layout_width="50dp" android:layout_height="50dp" android:text="E5" />
+            <Button android:id="@+id/boutonJeu2E6" android:layout_width="50dp" android:layout_height="50dp" android:text="E6" />
+            <Button android:id="@+id/boutonJeu2E7" android:layout_width="50dp" android:layout_height="50dp" android:text="E7" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/boutonJeu2F1" android:layout_width="50dp" android:layout_height="50dp" android:text="F1" />
+            <Button android:id="@+id/boutonJeu2F2" android:layout_width="50dp" android:layout_height="50dp" android:text="F2" />
+            <Button android:id="@+id/boutonJeu2F3" android:layout_width="50dp" android:layout_height="50dp" android:text="F3" />
+            <Button android:id="@+id/boutonJeu2F4" android:layout_width="50dp" android:layout_height="50dp" android:text="F4" />
+            <Button android:id="@+id/boutonJeu2F5" android:layout_width="50dp" android:layout_height="50dp" android:text="F5" />
+            <Button android:id="@+id/boutonJeu2F6" android:layout_width="50dp" android:layout_height="50dp" android:text="F6" />
+            <Button android:id="@+id/boutonJeu2F7" android:layout_width="50dp" android:layout_height="50dp" android:text="F7" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/boutonJeu2G1" android:layout_width="50dp" android:layout_height="50dp" android:text="G1" />
+            <Button android:id="@+id/boutonJeu2G2" android:layout_width="50dp" android:layout_height="50dp" android:text="G2" />
+            <Button android:id="@+id/boutonJeu2G3" android:layout_width="50dp" android:layout_height="50dp" android:text="G3" />
+            <Button android:id="@+id/boutonJeu2G4" android:layout_width="50dp" android:layout_height="50dp" android:text="G4" />
+            <Button android:id="@+id/boutonJeu2G5" android:layout_width="50dp" android:layout_height="50dp" android:text="G5" />
+            <Button android:id="@+id/boutonJeu2G6" android:layout_width="50dp" android:layout_height="50dp" android:text="G6" />
+            <Button android:id="@+id/boutonJeu2G7" android:layout_width="50dp" android:layout_height="50dp" android:text="G7" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

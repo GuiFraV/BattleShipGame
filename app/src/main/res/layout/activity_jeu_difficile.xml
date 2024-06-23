@@ -102,4 +102,14 @@
         </TableRow>
     </TableLayout>
 
+
+    <TextView
+        android:id="@+id/feedbackTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Cliquez sur une case pour commencer"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

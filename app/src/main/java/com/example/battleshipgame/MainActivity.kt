@@ -10,7 +10,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.battleshipgame.ui.theme.BattleShipGameTheme
 
@@ -21,7 +20,7 @@ class MainActivity : ComponentActivity() {
             BattleShipGameTheme {
                 MainScreen(
                     onEasyClick = { navigateToJeuActivity() },
-                    onHardClick = { /* Add navigation to another activity here */ }
+                    onHardClick = { navigateToJeuDifficileActivity() }
                 )
             }
         }
@@ -29,6 +28,11 @@ class MainActivity : ComponentActivity() {
 
     private fun navigateToJeuActivity() {
         val intent = Intent(this, Jeu::class.java)
+        startActivity(intent)
+    }
+
+    private fun navigateToJeuDifficileActivity() {
+        val intent = Intent(this, JeuDifficileActivity::class.java)
         startActivity(intent)
     }
 }
@@ -50,16 +54,5 @@ fun MainScreen(onEasyClick: () -> Unit, onHardClick: () -> Unit) {
         Button(onClick = onHardClick) {
             Text(text = "Difficile")
         }
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    BattleShipGameTheme {
-        MainScreen(
-            onEasyClick = {},
-            onHardClick = {}
-        )
     }
 }
